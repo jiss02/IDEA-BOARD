@@ -4,5 +4,5 @@ from .models import Idea
 class IdeaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Idea
-        fields = ('writer','name', 'detail','created_date', 'updated_date')
-        read_only_fields = ('writer','created_date', 'updated_date')
+        fields = ('writer','name', 'detail','created_date', 'updated_date', 'views')
+        read_only_fields = ('writer','created_date', 'updated_date', 'views')

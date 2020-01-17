@@ -8,3 +8,7 @@ class Idea(models.Model):
     detail = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
+    views = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return self.name
