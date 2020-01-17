@@ -20,7 +20,7 @@ class IdeaList(APIView):
             return Response(serializer.errors)
         except Exception as err:
             print(err)
-            return Response("에러발생")
+            return Response("에러발생 터미널을 확인하십시오")
 
     def get(self, req, format=None):
         queryset = Idea.objects.all()
