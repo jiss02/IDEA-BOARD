@@ -9,6 +9,9 @@ router = routers.DefaultRouter()
 # router.register('joins', JoinViewSet)
 
 urlpatterns = [
+    path('', include(router.urls)),
     path('admin/', admin.site.urls),
     path('ideas/', include('ideas.urls')),
 ]
+
+urlpatterns += router.urls
