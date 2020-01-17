@@ -1,3 +1,9 @@
 from django.shortcuts import render
+from rest_framework import viewsets
+from .serializer import IdeaSerializer
+from .models import Idea
 
-# Create your views here.
+
+class IdeaViewSet(viewsets.ModelViewSet):
+    queryset = Idea.objects.all()
+    serializer_class = IdeaSerializer
