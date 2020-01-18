@@ -8,5 +8,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
     path('ideas/', include('ideas.urls')),
-    path('joins/', include('join.urls')),
+    path('joins/', include('joins.urls')),
+    path('users/', include('users.urls')),
 ]
