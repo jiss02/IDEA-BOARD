@@ -1,5 +1,5 @@
 # Django
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404
 from django.http import Http404
 # DRF
 from rest_framework import viewsets, status
@@ -16,7 +16,6 @@ class IdeaList(APIView):
         try:
             serializer = IdeaSerializer(data=req.data)
             if serializer.is_valid():
-                serializer.save(writer=req.user)
                 serializer.save()
                 return Response(serializer.data)
             return Response(serializer.errors)
