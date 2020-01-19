@@ -4,6 +4,7 @@ from rest_framework import routers
 from . import views
 
 urlpatterns = [
-    path('', views.UserTempClass.as_view()),
-    path('<int:pk>/', views.UserTempClass.as_view())
+    path('', views.usersAssign.as_view()),
+    path('signup/', views.usersAssign.as_view()),
+    path('login/', views.usersLogin),
 ]
