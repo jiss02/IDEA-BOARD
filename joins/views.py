@@ -5,8 +5,6 @@ from rest_framework.response import Response
 from .serializer import JoinSerializer
 from .models import Join
 
-
-
 @api_view(['POST'])
 def joinCreate(req):
     try:
