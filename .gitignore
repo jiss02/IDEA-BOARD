@@ -149,4 +149,5 @@ yarn-error.log*
 
 ###### Custom #####
 config/
+.vscode/
 
