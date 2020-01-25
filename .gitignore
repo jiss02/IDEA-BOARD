@@ -109,7 +109,7 @@ celerybeat-schedule
 .pydevproject
 
 # mkdocs documentation
-/site
+*/site
 
 # mypy
 .mypy_cache/
@@ -126,8 +126,8 @@ dmypy.json
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
+*/node_modules
+*/.pnp
 .pnp.js
 
 # testing
